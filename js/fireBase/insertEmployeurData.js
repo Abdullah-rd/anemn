@@ -8,7 +8,6 @@ const db = getDatabase();
 export function insertEmployeurData() {
 
 
-    alert('loading');
 
         let tnomEnterprise = document.getElementById("nomEnterprise");
         let tadresseEnterprise = document.getElementById("adresseEnterprise");
