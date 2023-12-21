@@ -1,0 +1,42 @@
+
+
+
+body{
+    min-height: 140vh;
+    padding:0;
+}
+.screens-container{
+    display: flex;
+  overflow: hidden;
+
+    background: #fafafa;
+    border-radius: 20px;
+}
+
+.titre {
+    text-align: center;
+    font-size: 35px;
+}
+
+.section-1{
+border-radius: 0;
+
+}
+.section-2{
+    background: #fafafa;
+    padding: 1em 2em 2em 2em;
+    display: flex;
+    border-right: 5px solid #2b3952;
+    flex-direction: column;
+    min-width: 600px;
+    gap: 2em;
+    min-width: 300px;
+
+}
+.autre{
+    height: 100px;
+    border: none;
+    resize: none;
+
+}
+

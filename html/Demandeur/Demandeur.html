@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'>
+    <link rel="stylesheet" href="../../style/settings.css">
+    <link rel="stylesheet" href="../../style/StyleDemandeur/Demandeur.css">
+    <link rel="stylesheet" href="../../style/button.css">
+
+</head>
+
+<body>
+
+
+    <a class="home-button" href="../../index.html">
+
+        <svg class="home-button-picture" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+            <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+          </svg>
+          
+
+
+    </a>
+
+    <form action="DemandeurDashboard.html" class="screen-1" onsubmit="return validateForm();">
+        
+        <div class="titre">Inscrire</div>
+        <div class="error-message"></div>
+
+        <div class="section">
+            <div class="tout">
+                <label for="nom">Nom</label>
+                <div class="sec">
+                    <input id="Dnom" class="pas" type="text" name="nom" placeholder="Votre nom ici" />
+                </div>
+            </div>
+            <div class="tout">
+                <label for="prenom">prenom</label>
+                <div class="sec">
+                    <input id="Dprenom" class="pas" type="text" name="prenom" placeholder="Votre prenom ici" />
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+
+
+            <div class="tout">
+                <label for="date">Naissance</label>
+                <div class="sec">
+                    <input id="Dnaissance"  class="pas" type="date" name="date" placeholder="" />
+                </div>
+            </div>
+            <div class="tout">
+                <label for="adresse">Adresse</label>
+                <div class="sec">
+                    <input id="Dadresse" class="pas" type="text" name="adresse" placeholder="Entrer vous adresse ici" />
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="tout">
+                <label for="password">Password</label>
+                <div class="sec">
+                    <input id="Dpassword" class="pas" type="password" name="password" placeholder="············" />
+                </div>
+            </div>
+
+
+            <div class="tout">
+                <label for="email">Email Address</label>
+                <div class="sec">
+                    <input id="Demail" class="pas" type="email" name="email" placeholder="Username@gmail.com" />
+                </div>
+            </div>
+        </div>
+
+        <div class="sexe">
+            <input type="radio" id="homme" name="sexe" value="homme">
+            <label for="homme">Homme</label><br>
+            <input type="radio" id="femme" name="sexe" value="femme">
+            <label for="femme">Femme</label><br>
+        </div>
+
+        <input type="submit" class="login" id="Dlogin" onclick=" pageSuivant();"> </input>
+
+        <div class="extra"><a href="../Connecter.html">Se connecter</a><a href="../Employeur/Employeur.html">Je suis un employeur</a>
+
+        </div>
+    </form>
+
+    <script src="../../js/Signup.js"></script>
+    <script src="../../js/fireBase/Demandeur.js"></script>
+    
+</body>
+
+
+</html>

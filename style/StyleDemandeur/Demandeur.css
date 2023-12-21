@@ -1,0 +1,141 @@
+* {
+    font-family: "Poppins";
+}
+
+a {
+    color: black;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsla(190, 70%, 38%, 1);
+    background: linear-gradient(90deg, hsla(190, 70%, 38%, 1) 0%, hsla(245, 17%, 29%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(190, 70%, 38%, 1) 0%, hsla(245, 17%, 29%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(190, 70%, 38%, 1) 0%, hsla(245, 17%, 29%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#1D8DA3", endColorstr="#3F3D56", GradientType=1);
+    min-height: 130vh;
+}
+
+.screen-1 {
+    background: #fafafa;
+    padding: 1em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    min-width: 600px;
+    gap: 2em;
+}
+
+.tout {
+    background: white;
+    box-shadow: 0 0 2em #e8f3f598;
+    padding: 1em;
+    display: flex;
+    border: 3px solid #2b3952;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: #4d4d4d;
+}
+
+.tout input {
+    outline: none;
+    border: none;
+}
+
+
+
+
+.tout input::placeholder {
+    color: #808080;
+    font-size: 0.9em;
+}
+
+
+.login {
+    padding: 1em;
+    background: #2b3952;
+    color: #fafafa;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.login:hover {
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.extra {
+    display: flex;
+    font-size: 0.7em;
+    color: #5e5e5e;
+    justify-content: center;
+    gap: 5em;
+}
+
+.screen-1 .extra span {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.sexe {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em
+}
+
+.titre {
+    align-self: center;
+    font-size: 50px;
+}
+
+
+
+a:before,
+a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    background-color: #2b3952;
+    transition: width 0.15s ease-in-out;
+}
+
+
+a:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a:after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+a:hover:before,
+a:hover:after {
+    width: 100%;
+}
+
+
+.pas {
+    width: 100%;
+    height: 100%;
+}

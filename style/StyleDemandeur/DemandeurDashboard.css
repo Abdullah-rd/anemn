@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+background-color: #faf9fd;
+overflow: hidden; 
+padding: 100px 0px 50px 0px;
+}
+
+.titre-container{
+    position: fixed;
+    text-align: center;
+    top:40%;
+    justify-self:center ;
+    line-height: 2.9em;
+    opacity: 0;
+    transition: 700ms ease-in-out;
+
+}
+
+.titreDeProfession,.agetitre{
+    letter-spacing: 2px;
+    font-family: thing;
+    font-weight: bold;
+    font-size: 2em;
+    color: #2b3952;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.fadeout{
+    opacity: 0;
+}
+
+.titre1,.titre2{
+    letter-spacing: 2px;
+    font-family: thing;
+    font-weight: bold;
+    font-size: 2em;
+    color: #2b3952;
+}
+.profession-container{
+    opacity: 0;
+    transition: 300ms ease-in-out;
+    scale:0.9;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.zoomed{
+    scale: 1.05;
+}
+.card{
+    background-color: transparent;
+    user-select: none; /* disactivi selection de text */
+    transition: 150ms ease-out;
+    border-radius: 30px;
+    border: 4px solid #2b3952;
+    display: flex;
+    flex-direction: column;
+
+   
+    padding: 10px;
+}
+.card:hover{
+    cursor: pointer;
+}
+
+.profession-cards{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 400px);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        padding: 30px 50px;
+        min-height: 200px;
+        overflow: auto;
+}
+
+.btn{
+    width: 30%;
+    border-radius: 50px;
+    align-self:center ;
+    font-size: 23px;
+    border: none;
+    margin-top: 30px;
+}
+
+.sec1{
+    height: 60px;
+    width: 30%;
+    opacity: 0;
+}
+.icons{
+width: 90%;
+
+}
+
+.sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+    justify-content: center;
+}
+
+.card-icon{
+    font-size: 100px;
+}
+.card-name{
+    font-size:25px;
+    font-family: thinf;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+
+.ageprofession-container{
+    position: fixed;
+    top:40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.agetext{
+    padding: 10px;
+    border: 3px solid #2b3952;
+    font-size: 35px;
+    font-family: thinf;
+    border-radius: 30px;
+    text-align: center;
+}

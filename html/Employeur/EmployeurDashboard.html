@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'>
+<link rel="stylesheet" href="../../style/settings.css">
+<link rel="stylesheet" href="../../index.css">
+<link rel="stylesheet" href="../../style/button.css">
+<link rel="stylesheet" href="../../style/StyleEmployeur/EmployeurDashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="section1">
+
+            <img class="logo_anem" src="../../images/Logo_anem.png" alt="">
+        </div>
+
+        <div class="section2">
+
+            <div  class="hlink" onclick="SideBarShowHide();">Offres</div>
+            <a href="https://www.anem.dz/#/" class="hlink hlink3" target="_blank">Site officiel</a>
+
+        </div>
+
+        <div class="section3">
+
+            <a class="btn btn1" href="../../html/Connecter.html">Deconnecter</a>
+        </div>
+
+    </div>
+
+    <div class="dashboard-titre">
+    </div>
+    <div class="main1">
+
+        <a href="EmployeurListOffre.html" class="half half1" >Votre list de offres</a>
+        <a href="EmployeurCreerOffre.html" class="half half2">Creer un offre</a> 
+ </div>
+        
+ <div class="sidebar">
+     <div class="SideBarMenu">
+        <div class="sidebar-box">
+            <div class="sidebar-header" onclick="SideBarShowHide();">
+                x
+            </div>
+
+            <div class="sidebar-content">
+                <div class="side-bar-titre">Offres</div>
+
+                <div class="contents content1">
+                    votre offre de titre : "un designer photoshop cs6" est ete <bold
+                        style="font-family: thing; color:#2b3952 ;">accepter</bold> par notre system!
+                </div>
+                <div class="contents content2">
+                    votre offre de titre : "Programmer en C++" est ete <bold
+                        style="font-family: thing;  color:#2b3952 ;">decline</bold> par notre system!
+                </div>
+
+            </div>
+        </div>        
+    </div>
+ </div>
+
+
+ <script src="../../js/Offres.js">
+ </script>
+
+<script type="module" src="../../js/fireBase/database.js" ></script>
+
+
+<script>    
+let Enom = localStorage.getItem("Enom");
+document.querySelector(".dashboard-titre").innerHTML = `Bonjour ${Enom} !`;;
+</script>
+
+</body>
+</html>

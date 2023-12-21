@@ -1,0 +1,60 @@
+body{
+    min-height: 100vh;
+    position: relative;
+}
+
+
+
+
+.home-button {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    background-color: #fff6f6;    
+    cursor: pointer;
+    padding:5px;
+    font-size: 14px;
+    font-weight: 650;
+    line-height: normal;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 500ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-button:before,
+.home-button:after{
+background: none;
+}
+
+.home-button:disabled {
+    pointer-events: none;
+}
+.home-button:hover {
+    transform: translateY(-5px);
+    box-shadow: none;
+    opacity: 0.9;
+
+}
+.home-button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    
+
+}
+.home-button-picture{
+    color: #2b3952;
+    width: 35px;
+    height: 35px;
+
+}

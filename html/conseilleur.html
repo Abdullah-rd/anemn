@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'>
+<link rel="stylesheet" href="../style/settings.css">
+<link rel="stylesheet" href="../index.css">
+<link rel="stylesheet" href="../style/StyleDemandeur/Demandeur.css">
+<link rel="stylesheet" href="../style/connecter.css">
+<link rel="stylesheet" href="../style/button.css">
+<link rel="stylesheet" href="../style/conseilleur.css">
+    <title>Document</title>
+</head>
+<body>
+    <a class="home-button" href="../index.html">
+
+        <svg class="home-button-picture" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+            <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+          </svg>
+        
+    </a>
+
+
+    
+    <div class="screen-1">
+
+        <div class="titre">choisir votre job
+        </div>
+
+            <button  class="login choix CSD"  onclick="showForm('Demandeur')"> <svg class="cs-icon" fill="#000000" viewBox="0 0 24 24" id="date-alt-search" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect id="secondary" x="2" y="3" width="20" height="17" rx="2" style="fill: #2ca9bc;"></rect><circle id="primary" cx="12" cy="15" r="7" style="fill: #2b3952;"></circle><path id="primary-2" data-name="primary" d="M20,3H4A2,2,0,0,0,2,5V9H22V5A2,2,0,0,0,20,3Z" style="fill: #2b3952;"></path><path id="secondary-2" data-name="secondary" d="M16,6a1,1,0,0,1-1-1V3a1,1,0,0,1,2,0V5A1,1,0,0,1,16,6ZM9,5V3A1,1,0,0,0,7,3V5A1,1,0,0,0,9,5Zm6.21,13.21a1,1,0,0,1-1.42,0l-1-1a3,3,0,1,1,1.41-1.41l1,1A1,1,0,0,1,15.21,18.21ZM11.5,15.5a1,1,0,1,0-1-1A1,1,0,0,0,11.5,15.5Z" style="fill: #2ca9bc;"></path></g></svg>
+                <div class="name"> Conseilleur service demendeur </div>
+            </button>
+            <button class="login choix CSO"  onclick="showForm('Offre')"> <svg class="cs-icon" fill="#000000" viewBox="0 0 24 24" id="job" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="secondary" d="M16,8H8A1,1,0,0,1,7,7V4A2,2,0,0,1,9,2h6a2,2,0,0,1,2,2V7A1,1,0,0,1,16,8ZM9,6h6V4H9Z" style="fill: #2ca9bc;"></path><rect id="primary" x="2" y="6" width="20" height="16" rx="2" style="fill: #2b3952;"></rect><path id="secondary-2" data-name="secondary" d="M15,14a1,1,0,0,1-1-1V12H7a1,1,0,0,1,0-2H17a1,1,0,0,1,0,2H16v1A1,1,0,0,1,15,14Z" style="fill: #2ca9bc;"></path></g></svg>
+                <div class="name"> Conseilleur service d'offre</div>
+            </button>
+
+    </div>
+
+
+
+        
+<script src="../js/conseilleur.js"></script>
+<script type="module" src="../js/fireBase/database.js"></script>
+</body>
+</html>

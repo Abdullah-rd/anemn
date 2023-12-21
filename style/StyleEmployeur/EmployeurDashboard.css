@@ -1,0 +1,134 @@
+body{
+    min-height: 110vh;
+}
+
+.main1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 56vh;
+        
+    
+}
+
+.dashboard-titre{
+    font-size: 50px;
+    font-family: thing;
+    color: #2b3952;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 60px;
+}
+
+.half{
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2b3952;
+    transition: 0.15s ease-in-out;
+
+}
+
+
+.half1{
+    border-radius: 30px 0px 0px 30px ;
+    border-right: 0px;
+   color: #2b3952;
+
+}
+
+.half2{
+    border-radius: 0px 30px 30px 0px ;
+    border-left: 0px;
+
+}
+
+
+.half:hover{
+    cursor: pointer;
+    background-color: #2b3952;
+    color: #faf9fd;
+}
+.half:active{
+    opacity: 0.9;
+}
+.hlink:hover{
+    cursor: pointer;
+}
+
+.sidebar{
+    
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 500px;
+        margin-left: -500px;
+        height: 100vh;
+        transition: 300ms ease-in-out;
+        display: grid;
+        padding: 5px;
+        box-sizing: border-box;
+        background-color: #faf9fd;
+        box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.073);
+        z-index: 99;
+  
+
+}
+
+.SideBarMenu 
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.sidebar-box{
+    display: grid;
+    position: relative;
+}
+.sidebar-content{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contents{
+    border-bottom: 2px  solid #808080  ;
+    padding: 35px 0px;
+    font-family: thinf;
+    line-height: 30px;
+    margin: 0px 10px;
+   
+}
+
+.sidebar-header{
+    position: absolute;
+    font-size: 30px;
+    font-family: thing;
+    color: #2b3952;
+    width: 30px;
+    top:10px;
+    bottom:0px;
+    right:10px;
+
+}
+.sidebar-header:hover{
+    cursor: pointer;
+}
+
+.side-bar-titre{
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-family: thing;
+    color: #2b3952;
+}
