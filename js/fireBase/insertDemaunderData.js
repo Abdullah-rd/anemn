@@ -43,6 +43,8 @@ export function insertDemandeurData() {
     })
     .then(() => {
         alert("succeed");
+        window.location.href = '../../index.html';
+
     })
     .catch((error) => {
         alert(error);
